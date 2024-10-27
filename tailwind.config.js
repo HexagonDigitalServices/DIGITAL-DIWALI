@@ -4,11 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        festive: "#FFD700",
-        dimBlue: "#0F172A", 
+        yellowCustom: "#FFC107", // Example: Custom yellow color
       },
       fontFamily: {
-        festive: ['Poppins', 'sans-serif'],
+        festive: ['"Poppins"', 'sans-serif'],
       },
     },
   },
