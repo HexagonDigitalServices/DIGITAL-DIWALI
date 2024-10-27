@@ -1,10 +1,14 @@
 import React from 'react';
+import Loop from '../components/Loop/Loop'
 
 const SecondSection = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center justify-between gap-12">
+      {/* Loop Component */}
+      
+      
       {/* Text Content */}
-      <div className="flex flex-col items-start max-w-lg space-y-6">
+      <div className="flex flex-col items-start max-w-lg space-y-4 mb-36">
         <h1 className="text-4xl font-bold text-gray-800 leading-snug">
           This Diwali Light Up Your Celebration
         </h1>
@@ -12,7 +16,7 @@ const SecondSection = () => {
           Enhance your beauty effortlessly with clean, nourishing products
           that let your natural radiance shine through.
         </p>
-        <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 rounded-md transition">
+        <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3  transition">
           Shop Now
         </button>
       </div>
@@ -22,12 +26,12 @@ const SecondSection = () => {
         <img
           src="https://via.placeholder.com/150"
           alt="Diwali sweets 1"
-          className="rounded-lg shadow-lg transform hover:scale-105 transition"
+          className=" shadow-lg transform hover:scale-105 transition"
         />
         <img
           src="https://via.placeholder.com/150"
           alt="Diwali sweets 2"
-          className="rounded-lg shadow-lg transform hover:scale-105 transition"
+          className=" shadow-lg transform hover:scale-105 transition"
         />
         <img
           src="https://via.placeholder.com/200"
@@ -37,12 +41,12 @@ const SecondSection = () => {
         <img
           src="https://via.placeholder.com/150"
           alt="Diwali sweets 4"
-          className="rounded-lg shadow-lg transform hover:scale-105 transition"
+          className=" shadow-lg transform hover:scale-105 transition"
         />
         <img
           src="https://via.placeholder.com/150"
           alt="Diwali sweets 5"
-          className="rounded-lg shadow-lg transform hover:scale-105 transition"
+          className=" shadow-lg transform hover:scale-105 transition"
         />
       </div>
     </section>

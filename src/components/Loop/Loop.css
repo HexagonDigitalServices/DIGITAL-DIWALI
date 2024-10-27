@@ -1,0 +1,49 @@
+/* src/carousel.css */
+
+.carousel-container {
+    width: 100%; /* Full width */
+    height: 100px; /* Adjust height as needed */
+    background-color: #fdfdfd; /* Peach background */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  .carousel-track {
+    display: flex;
+    white-space: nowrap; /* Keep logos in one line */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  .carousel-item {
+    flex-shrink: 0; /* Prevent logos from shrinking */
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+  }
+  
+  .carousel-item:hover {
+    opacity: 1; /* Highlight logo on hover */
+  }
+  
+  /* Gradient masks for the left and right edges */
+  .gradient-mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 35%; /* Adjust width of gradient masks */
+    pointer-events: none; /* Allow interaction through the mask */
+    z-index: 10;
+  }
+  
+  .gradient-mask.left-0 {
+    left: 0;
+    background: linear-gradient(to right, #ffffff, transparent);
+  }
+  
+  .gradient-mask.right-0 {
+    right: 0;
+    background: linear-gradient(to left, #ffffff, transparent);
+  }
+  
