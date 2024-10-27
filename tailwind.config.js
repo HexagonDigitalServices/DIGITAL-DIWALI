@@ -8,7 +8,7 @@ module.exports = {
         dimBlue: "#0F172A", 
       },
       fontFamily: {
-        festive: ['"Poppins"', 'sans-serif'],
+        festive: ['Poppins', 'sans-serif'],
       },
     },
   },
