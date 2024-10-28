@@ -1,5 +1,6 @@
 import React from 'react';
 import img1 from '../assets/heroin.jpg'
+import Button from './Button'
 
 const HeroSection = () => {
   return (
@@ -10,25 +11,20 @@ const HeroSection = () => {
           src={img1}
         />
       </div>
-
+       <div className='absolute z-10 text-white text-left top-24 left-10'>
+  <h1 style={{ fontWeight: '800', fontSize: '3rem' }}>
+    Hexagon
+  </h1>
+  <h3 style={{ fontSize: '2rem' }}>
+    digital services
+  </h3>
+</div>
       {/* Overlay Content */}
-      {/* <div className="relative z-10 text-center text-white px-4">
-        <h1 className="text-5xl md:text-7xl font-extrabold mb-6">Collection</h1>
-        <p className="text-lg md:text-2xl mb-4">
-          This Diwali, bring wealth and good fortune home.
-        </p>
-        <p className="text-xl md:text-3xl text-yellow-400 italic mb-8">
-          Diya Collection
-        </p>
-
-        <div className="text-4xl md:text-6xl font-extrabold text-white/40 mb-8">
-          50% OFF
-        </div>
-
-        <button className="bg-yellow-400 text-black px-8 py-4 rounded-lg text-xl hover:bg-white hover:text-black transition duration-300">
-          Buy Now
-        </button>
-      </div> */}
+      <div className="absolute z-10 text-center text-white px-4 bottom-14 left-6">
+        <Button>
+          hexagondigitalservices.com
+        </Button>
+      </div> 
     </div>
   );
 };

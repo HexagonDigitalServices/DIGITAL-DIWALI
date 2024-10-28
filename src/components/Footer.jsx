@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaPinterestP, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube , FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -87,7 +87,7 @@ const Footer = () => {
               <FaInstagram />
             </a>
             <a href="#" className="text-gray-400 rounded-md  bg-white/10 py-1 px-1 hover:text-white transition duration-300 ease-in-out">
-              <FaPinterestP />
+              <FaYoutube  />
             </a>
           </div>
         </div>

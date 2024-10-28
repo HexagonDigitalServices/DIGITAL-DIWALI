@@ -20,7 +20,7 @@ const FourthSection = () => {
         <p className="text-lg text-gray-600">
           Diwali, also known as the Festival of Lights, is one of the most important and widely celebrated festivals in India and among Hindu communities globally.
         </p>
-        <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-6 py-3 transition">
+        <button className="bg-orange-400 hover:bg-orange-500 text-black px-6 py-3 transition">
           Shop Now
         </button>
       </div>
