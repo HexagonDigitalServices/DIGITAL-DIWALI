@@ -11,7 +11,7 @@ body {
 
 
 .gradient-text {
-    background: radial-gradient(circle at top left, rgb(235, 93, 93), rgb(214, 71, 143), rgb(241, 100, 6), rgb(42, 230, 158));
+    background: radial-gradient(circle at top left, rgb(235, 93, 93), rgb(214, 71, 143), rgb(241, 100, 6), rgb(255, 196, 0));
     background-size: 300% 300%;
     background-clip: text;
     -webkit-background-clip: text;

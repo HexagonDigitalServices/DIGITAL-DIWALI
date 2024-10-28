@@ -40,7 +40,7 @@ const SellingSection = () => {
       <div className="absolute inset-0 z-0 bg-gradient-to-bl from-blue-700 to-cyan-500 blur-3xl opacity-40"></div>
 
       <h2 className="text-center text-3xl font-bold text-white mb-8">
-        Best Offer on Saas Products
+        Amazing Saas Comming Soon...
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-8">
