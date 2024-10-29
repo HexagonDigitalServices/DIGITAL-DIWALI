@@ -21,9 +21,16 @@ const HeroSection = () => {
 </div>
       {/* Overlay Content */}
       <div className="absolute z-10 text-center text-white px-4 bottom-14 left-6">
-        <Button>
-          hexagondigitalservices.com
+      <a
+                href="https://hexagondigitalservices.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button>
+          www.hexagondigitalservices.com
         </Button>
+              </a>
+        
       </div> 
     </div>
   );

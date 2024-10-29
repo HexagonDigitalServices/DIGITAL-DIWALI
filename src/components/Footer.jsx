@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -41,17 +42,16 @@ const Footer = () => {
 
         <div>
           <h5 className="font-semibold text-lg mb-4">About Us</h5>
-          <ul className="space-y-2">
-            <li>Home</li>
-            <li>About</li>
-            <li>Websites</li>
-            
-          </ul>
+         <ul className="space-y-2">
+  <li className="cursor-pointer"><Link to="home">Home</Link></li>
+  <li className="cursor-pointer"><Link to="about">About</Link></li>
+  <li className="cursor-pointer"><Link to="websites">Website</Link></li>
+</ul>
         </div>
 
         <div>
-          <h5 className="font-semibold text-lg mb-4">Know us</h5>
-          <ul className="space-y-2">
+          <h5 className="font-semibold  text-lg mb-4">Know us</h5>
+          <ul className="space-y-2 text-gray-400">
             <li>Wishlist</li>
             <li>Orders</li>
             <li>Cancellation</li>
@@ -64,7 +64,11 @@ const Footer = () => {
           <ul className="space-y-2">
          
           
-            <li>Terms & Conditions</li>
+            <li><a
+                href="https://hexagondigitalservices.com/tnc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Terms & Conditions</a></li>
           </ul>
         </div>
 
