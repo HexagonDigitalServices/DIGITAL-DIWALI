@@ -2,35 +2,38 @@
 import React from "react";
 import CustomButton from "./Button";
 import { MdArrowOutward } from "react-icons/md";
+import MG from '../assets/RealState.jpg'; // Fixed image extension
+import MG1 from '../assets/Traveling.jpg'; // Fixed image extension
+import MG2 from '../assets/Veg Shop.jpg'; // Fixed image extension
+import MG3 from '../assets/Furniture.jpg'; // Fixed image extension
 
 const products = [
   {
     id: 1,
-    name: "Besan Ladoo - Dry Fruit",
-    price: "₹4800",
-    image: "/assets/ladoo.png", // Replace with your image path
-    label: "Hot",
+    name: "RealState",
+    
+    image: MG,
+    
   },
   {
     id: 2,
-    name: "Handmade Diya",
-    price: "₹5000",
-    originalPrice: "₹16500",  // Original price crossed out
-    image: "/assets/diya.png",
+    name: "Traveling",
+    
+    image: MG1,
   },
   {
     id: 3,
-    name: "Shape Crackers",
-    price: "₹5503",
-    image: "/assets/crackers.png",
-    label: "20% Off",
+    name: "Veg Shop",
+    
+    image: MG2,
+    
   },
   {
     id: 4,
-    name: "String Light",
-    price: "₹3000",
-    originalPrice: "₹10000",
-    image: "/assets/string-light.png",
+    name: "Furniture",
+    
+    
+    image: MG3,
   },
 ];
 
@@ -60,11 +63,11 @@ const SellingSection = () => {
             <img
               src={product.image}
               alt={product.name}
-              className="w-32 h-32 object-cover mx-auto"
+              className="w-auto h-auto rounded-md object-cover mx-auto"
             />
 
             {/* Product Info */}
-            <div className="mt-6 text-center"> {/* Reduced margin */}
+            <div className="mt-6 text-center">
               <h3 className="text-lg font-semibold gradient-text ">{product.name}</h3>
               <p className="text-orange-400 text-xl ">
                 {product.price}
@@ -77,16 +80,16 @@ const SellingSection = () => {
             </div>
 
             {/* Action Buttons */}
-            <div className="mt-4 flex justify-around"> {/* Reduced margin */}
+            <div className="mt-4 flex justify-around">
               <CustomButton className="">
-                Pre-View
+                Soon...
               </CustomButton>
               <button className="relative inline-flex h-fit w-fit rounded-full border border-blue-100/20 bg-blue-200/10 px-2 py-2 text-blue-200 outline-none ring-blue-300 transition-colors after:absolute after:inset-0 after:-z-10 after:animate-pulse after:rounded-full after:bg-cyan-300 after:bg-opacity-0 after:blur-md after:transition-all after:duration-500 hover:border-cyan-300/40 hover:text-white after:hover:bg-opacity-20 focus:ring-2">
                 <MdArrowOutward />
               </button>
 
               <CustomButton>
-                Buy Now
+                Contact 
               </CustomButton>
             </div>
           </div>

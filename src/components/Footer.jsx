@@ -11,11 +11,11 @@ const Footer = () => {
           <hr className="border-red-500 mb-6"/>
           <p className="mb-2 flex items-center">
             <FaPhoneAlt className="mr-2" /> 
-            <span>Phone: +83726387292</span>
+            <span>Phone: +91 8840775386</span>
           </p>
           <p className="flex items-center">
             <FaMapMarkerAlt className="mr-2" />
-            <span>123, Western Road, Melbourne, Australia</span>
+            <span>Lucknow, Uttar Pradesh</span>
           </p>
         </div>
 

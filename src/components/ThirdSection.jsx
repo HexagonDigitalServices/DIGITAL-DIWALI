@@ -2,35 +2,41 @@
 import React from "react";
 import CustomButton from "./Button";
 import { MdArrowOutward } from "react-icons/md";
+import img1 from '../assets/p1 (1).png';
+import img2 from '../assets/p1 (2).png';
+import img3 from '../assets/p1 (3).png';
+import img4 from '../assets/p1 (4).png';
 
 const products = [
   {
     id: 1,
-    name: "Besan Ladoo - Dry Fruit",
-    price: "₹4800",
-    image: "../assets/p1 (1).png", // Replace with your image path
+    name: "SALON",
+    price: "₹7999",
+    image: img1, // Fixed image path
     label: "Hot",
+    originalPrice: "₹14999"
   },
   {
     id: 2,
-    name: "Handmade Diya",
-    price: "₹5000",
-    originalPrice: "₹16500",  // Original price crossed out
-    image: "/assets/diya.png",
+    name: "DENTIST",
+    price: "₹5999",
+    originalPrice: "₹11999",  // Original price crossed out
+    image: img2, // Fixed image path
+    label: "50% Off"
   },
   {
     id: 3,
-    name: "Shape Crackers",
-    price: "₹5503",
-    image: "/assets/crackers.png",
-    label: "20% Off",
+    name: "GYM",
+    price: "₹4999",
+    image: img3, // Fixed image path
+    
   },
   {
     id: 4,
-    name: "String Light",
-    price: "₹3000",
-    originalPrice: "₹10000",
-    image: "/assets/string-light.png",
+    name: "INTERIOR",
+    price: "₹4999",
+    
+    image: img4,
   },
 ];
 
@@ -60,7 +66,7 @@ const SellingSection = () => {
             <img
               src={product.image}
               alt={product.name}
-              className="w-32 h-32 object-cover mx-auto"
+              className="w-auto h-auto rounded-md object-cover mx-auto"
             />
 
             {/* Product Info */}
