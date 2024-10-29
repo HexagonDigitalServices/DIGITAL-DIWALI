@@ -16,7 +16,7 @@ const SecondSection = () => {
           Enhance your beauty effortlessly with clean, nourishing products
           that let your natural radiance shine through.
         </p>
-        <button className="bg-orange-400 hover:bg-orange-500 text-black px-6 py-3 transition">
+        <button className="gradient-button text-black px-6 py-3 transition">
           Shop Now
         </button>
         <img

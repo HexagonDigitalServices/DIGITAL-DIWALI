@@ -8,7 +8,7 @@ const products = [
     id: 1,
     name: "Besan Ladoo - Dry Fruit",
     price: "₹4800",
-    image: "/assets/ladoo.png", // Replace with your image path
+    image: "../assets/p1 (1).png", // Replace with your image path
     label: "Hot",
   },
   {
