@@ -45,9 +45,11 @@ const Navbar = () => {
             <CiSearch className="text-white text-xl cursor-pointer hover:text-red-400 transition duration-300" />
             <CiShoppingBasket className="text-white text-xl cursor-pointer hover:text-red-400 transition duration-300" />
             <CiUser className="text-white text-xl cursor-pointer hover:text-red-400 transition duration-300" />
-            <button className="ml-4 text-sm bg-white text-black px-4 py-2 rounded-b-3xl hover:text-black transition duration-300 gradient-button">
-              Contact Us
-            </button>
+           <a href="https://hexagondigitalservices.com/contact">
+  <button className="ml-4 text-sm bg-white text-black px-4 py-2 rounded-b-3xl hover:text-black transition duration-300 gradient-button">
+    Contact Us
+  </button>
+</a>
           </div>
         </div>
       </div>
