@@ -16,7 +16,7 @@ const HeroSection = () => {
     Hexagon
   </h1>
   <h3 style={{ fontSize: '2rem' }}>
-    digital services
+    Digital Services
   </h3>
 </div>
       {/* Overlay Content */}
