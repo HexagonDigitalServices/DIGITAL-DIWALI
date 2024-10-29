@@ -44,8 +44,8 @@ const Footer = () => {
           <ul className="space-y-2">
             <li>Home</li>
             <li>About</li>
-            <li>Blog</li>
-            <li>FAQ</li>
+            <li>Websites</li>
+            
           </ul>
         </div>
 
@@ -62,9 +62,8 @@ const Footer = () => {
         <div>
           <h5 className="font-semibold text-lg mb-4">Useful Links</h5>
           <ul className="space-y-2">
-            <li>Career</li>
-            <li>Advanced Search</li>
-            <li>Helping Center</li>
+         
+          
             <li>Terms & Conditions</li>
           </ul>
         </div>

@@ -3,6 +3,7 @@ import hlogo from '../assets/Hexagon Logo.png'
 import s2a from '../assets/s2a.jpg'
 import s2b from '../assets/s2b.jpg'
 import s2c from '../assets/s2c.jpg'
+import { Link } from 'react-scroll';
 
 const SecondSection = () => {
   return (
@@ -16,9 +17,12 @@ const SecondSection = () => {
           Enhance your beauty effortlessly with clean, nourishing products
           that let your natural radiance shine through.
         </p>
+        <Link to="websites">
         <button className="gradient-button text-black px-6 py-3 transition">
           Shop Now
         </button>
+        </Link>
+        
         <img
           src={hlogo}
           alt="Diwali sweets 1"

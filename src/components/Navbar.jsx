@@ -14,22 +14,23 @@ const Navbar = () => {
 
           {/* Navigation Items */}
           <div className="hidden md:flex items-center">
-            <div className=" ">
-              {['Home', 'Services', 'Websites', 'About', 'Comming Soon...'].map(
+            <div>
+              {['Home', 'Services', 'Websites', 'About', 'Coming Soon...'].map(
                 (item, index) => {
                   const hoverColors = [
                     'hover:bg-red-300/80',
                     'hover:bg-blue-300/80',
                     'hover:bg-green-300/80',
                     'hover:bg-yellow-300/80',
-                    'hover:bg-purple-300/80'
+                    'hover:bg-purple-300/80',
                   ];
                   return (
                     <Link
                       key={index}
-                      to={item.toLowerCase().replace(/\s+/g, '')} // Assuming IDs are lowercase and no spaces
+                      to={item.toLowerCase().replace(/\s+/g, '')} // Matching section IDs
                       smooth={true}
                       duration={500}
+                      offset={-70} // Adjust offset to avoid overlap with navbar
                       className={`text-white px-4 py-2 ${hoverColors[index]} rounded-b-3xl transition-transform transform hover:scale-105 cursor-pointer`}
                     >
                       {item}
@@ -45,11 +46,11 @@ const Navbar = () => {
             <CiSearch className="text-white text-xl cursor-pointer hover:text-red-400 transition duration-300" />
             <CiShoppingBasket className="text-white text-xl cursor-pointer hover:text-red-400 transition duration-300" />
             <CiUser className="text-white text-xl cursor-pointer hover:text-red-400 transition duration-300" />
-           <a href="https://hexagondigitalservices.com/contact">
-  <button className="ml-4 text-sm bg-white text-black px-4 py-2 rounded-b-3xl hover:text-black transition duration-300 gradient-button">
-    Contact Us
-  </button>
-</a>
+            <a href="https://hexagondigitalservices.com/contact">
+              <button className="ml-4 text-sm bg-white text-black px-4 py-2 rounded-b-3xl hover:text-black transition duration-300 gradient-button">
+                Contact Us
+              </button>
+            </a>
           </div>
         </div>
       </div>
