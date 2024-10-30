@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        yellowCustom: "#FFC107", // Example: Custom yellow color
+        yellowCustom: "#FFC107",
       },
       fontFamily: {
         festive: ['"Poppins"', 'sans-serif'],
