@@ -17,58 +17,44 @@ const SecondSection = () => {
           Enhance your beauty effortlessly with clean, nourishing products
           that let your natural radiance shine through.
         </p>
+        <Link to="websites">
+          <button className="gradient-button text-black px-6 py-3 transition">
+            Shop Now
+          </button>
+        </Link>
 
-        {/* Button for Small Screens */}
-     <div className="block sm:hidden mt-4 text-center">
-  <Link to="websites">
-    <button className="gradient-button text-black px-6 py-3">
-      Shop Now
-    </button>
-  </Link>
-</div>
-
-        {/* Hexagon Logo */}
         <img
           src={hlogo}
-          alt="Hexagon Logo"
+          alt="Diwali sweets 1"
           className="transform hover:scale-105 transition mx-auto lg:mx-0 mt-4 h-20 sm:h-24"
         />
       </div>
 
       {/* Image Grid */}
-      <div className="relative flex-1 flex items-center justify-center">
+      <div className="relative flex-1 flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-0">
         {/* Large Image */}
         <img
           src={s2b}
           alt="Diwali sweets 2"
-          className="h-72 w-48 transform hover:scale-105 transition"
+          className="h-60 w-40 sm:h-72 sm:w-48 transform hover:scale-105 transition"
         />
 
         {/* Smaller Images */}
-        <div className="absolute top-8 left-40 sm:left-10 md:left-20 lg:left-10 xl:left-5 border-2 border-white">
-  <img
-    src={s2a}
-    alt="Diwali sweets 3"
-    className="transform h-32 w-28 z-10 hover:scale-105 transition sm:h-24 sm:w-20"
-  />
-</div>
+        <div className="absolute top-8 left-1/2 transform -translate-x-1/2 lg:left-40 lg:translate-x-0 border-2 border-white">
+          <img
+            src={s2a}
+            alt="Diwali sweets 3"
+            className="h-24 w-20 sm:h-32 sm:w-28 transform hover:scale-105 transition"
+          />
+        </div>
 
-        <div className="absolute bottom-[-40px] right-14 border-2 border-white">
+        <div className="absolute bottom-[-20px] sm:bottom-[-40px] right-10 lg:right-14 border-2 border-white">
           <img
             src={s2c}
             alt="Diwali sweets 4"
-            className="transform h-28 w-38 hover:scale-105 transition"
+            className="h-20 w-28 sm:h-28 sm:w-38 transform hover:scale-105 transition"
           />
         </div>
-      </div>
-
-      {/* Button for Medium & Large Screens */}
-      <div className="hidden sm:block absolute bottom-10 left-6 lg:left-16">
-        <Link to="websites">
-          <button className="gradient-button text-black px-6 py-3">
-            Shop Now
-          </button>
-        </Link>
       </div>
     </section>
   );

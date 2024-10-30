@@ -2,10 +2,10 @@
 import React from "react";
 import CustomButton from "./Button";
 import { MdArrowOutward } from "react-icons/md";
-import MG from '../assets/RealState.jpg'; // Fixed image extension
-import MG1 from '../assets/Traveling.jpg'; // Fixed image extension
-import MG2 from '../assets/Veg Shop.jpg'; // Fixed image extension
-import MG3 from '../assets/Furniture.jpg'; // Fixed image extension
+import MG from '../assets/RealState.png'; // Fixed image extension
+import MG1 from '../assets/Traveling.png'; // Fixed image extension
+import MG2 from '../assets/Veg Shop.png'; // Fixed image extension
+import MG3 from '../assets/Furniture.png'; // Fixed image extension
 
 const products = [
   {
