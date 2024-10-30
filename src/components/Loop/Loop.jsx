@@ -1,8 +1,6 @@
-// src/components/BlurCarousel.jsx
 import React, { useEffect, useRef } from "react";
-import "../Loop/Loop.css"; // Ensure the CSS file path is correct
+import "../Loop/Loop.css"; 
 
-// Import logos from assets
 import windowsLogo from "../../assets/a1 (1).png";
 import mitLogo from "../../assets/a1 (2).png";
 import robinhoodLogo from "../../assets/a1 (3).png";

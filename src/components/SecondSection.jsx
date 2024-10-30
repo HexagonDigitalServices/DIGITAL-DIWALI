@@ -17,11 +17,14 @@ const SecondSection = () => {
           Enhance your beauty effortlessly with clean, nourishing products
           that let your natural radiance shine through.
         </p>
-        <Link to="websites">
-          <button className="gradient-button text-black px-6 py-3 transition">
-            Shop Now
-          </button>
-        </Link>
+        {/* Center the button on mobile view */}
+        <div className="w-full flex justify-center lg:justify-start">
+          <Link to="websites">
+            <button className="gradient-button text-black px-6 py-3 transition">
+              Shop Now
+            </button>
+          </Link>
+        </div>
 
         <img
           src={hlogo}
@@ -36,7 +39,7 @@ const SecondSection = () => {
         <img
           src={s2b}
           alt="Diwali sweets 2"
-          className="h-60 w-40 sm:h-72 sm:w-48 transform hover:scale-105 transition"
+          className="h-60 w-40 sm:h-72 sm:w-48 transform hover:scale-105 transition object-cover"
         />
 
         {/* Smaller Images */}
@@ -44,7 +47,7 @@ const SecondSection = () => {
           <img
             src={s2a}
             alt="Diwali sweets 3"
-            className="h-24 w-20 sm:h-32 sm:w-28 transform hover:scale-105 transition"
+            className="h-24 w-20 sm:h-32 sm:w-28 transform hover:scale-105 transition object-cover"
           />
         </div>
 
@@ -52,7 +55,7 @@ const SecondSection = () => {
           <img
             src={s2c}
             alt="Diwali sweets 4"
-            className="h-20 w-28 sm:h-28 sm:w-38 transform hover:scale-105 transition"
+            className="h-20 w-28 sm:h-28 sm:w-38 transform hover:scale-105 transition object-cover"
           />
         </div>
       </div>

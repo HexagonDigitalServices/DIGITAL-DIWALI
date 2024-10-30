@@ -5,13 +5,11 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-   
 }
 
-
-
 .gradient-text {
-    background: radial-gradient(circle at top left, rgb(235, 93, 93), rgb(214, 71, 143), rgb(241, 100, 6), rgb(255, 196, 0));
+    background: radial-gradient(circle at top left, rgb(235, 93, 93), rgb(214, 71, 143), 
+    rgb(241, 100, 6), rgb(255, 196, 0));
     background-size: 300% 300%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -19,14 +17,11 @@ body {
     animation: neonFlow 40s ease-in-out infinite;
 }
 
-
-
 .poppins-extralight {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
 }
-
 
 .gradient-button {
     background: radial-gradient(circle at top left, rgb(235, 93, 93), rgb(214, 71, 143),
