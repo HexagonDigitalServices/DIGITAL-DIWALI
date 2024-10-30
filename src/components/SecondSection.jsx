@@ -1,5 +1,5 @@
 import React from 'react';
-import hlogo from '../assets/Hexagon Logo.png';
+import hlogo from '../assets/Hexagonlogo.png';
 import s2a from '../assets/s2a.jpg';
 import s2b from '../assets/s2b.jpg';
 import s2c from '../assets/s2c.jpg';
