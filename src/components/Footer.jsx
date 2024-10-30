@@ -12,10 +12,8 @@ const Footer = () => {
 
   const handleSubscribe = (e) => {
     e.preventDefault();
-    // Mock API call
     if (email) {
       console.log(`Subscribing with email: ${email}`);
-      // Simulate API call
       setTimeout(() => {
         setIsSubscribed(true);
         setEmail('');
@@ -24,14 +22,14 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-r from-gray-800 to-teal-900 text-white py-10 px-8">
-      <div className="container mx-auto grid grid-cols-2 md:grid-cols-5 gap-6">
-        
+    <footer className="bg-gradient-to-r from-gray-800 to-teal-900 text-white py-10 px-4 md:px-8">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
+
         <div>
           <h5 className="font-semibold text-lg mb-2">Contact Info</h5>
-          <hr className="border-red-500 mb-6"/>
+          <hr className="border-red-500 mb-6" />
           <p className="mb-2 flex items-center">
-            <FaPhoneAlt className="mr-2" /> 
+            <FaPhoneAlt className="mr-2" />
             <span>Phone: +91 8840775386</span>
           </p>
           <p className="flex items-center">
@@ -42,15 +40,15 @@ const Footer = () => {
 
         <div>
           <h5 className="font-semibold text-lg mb-4">About Us</h5>
-         <ul className="space-y-2">
-  <li className="cursor-pointer"><Link to="home">Home</Link></li>
-  <li className="cursor-pointer"><Link to="about">About</Link></li>
-  <li className="cursor-pointer"><Link to="websites">Website</Link></li>
-</ul>
+          <ul className="space-y-2">
+            <li className="cursor-pointer"><Link to="home">Home</Link></li>
+            <li className="cursor-pointer"><Link to="about">About</Link></li>
+            <li className="cursor-pointer"><Link to="websites">Website</Link></li>
+          </ul>
         </div>
 
         <div>
-          <h5 className="font-semibold  text-lg mb-4">Know us</h5>
+          <h5 className="font-semibold text-lg mb-4">Know us</h5>
           <ul className="space-y-2 text-gray-400">
             <li>Wishlist</li>
             <li>Orders</li>
@@ -62,8 +60,6 @@ const Footer = () => {
         <div>
           <h5 className="font-semibold text-lg mb-4">Useful Links</h5>
           <ul className="space-y-2">
-         
-          
             <li><a
                 href="https://hexagondigitalservices.com/tnc"
                 target="_blank"
@@ -74,15 +70,18 @@ const Footer = () => {
 
         <div>
           <h5 className="font-semibold text-lg mb-4">Newsletter</h5>
-          <form onSubmit={handleSubscribe} className="relative mb-2 w-full">
+          <form onSubmit={handleSubscribe} className="flex flex-col mb-2">
             <input
               type="email"
               value={email}
               onChange={handleEmailChange}
               placeholder="Email address"
-              className="p-2 w-full rounded-md bg-white/10 text-gray-300 placeholder-gray-400 focus:outline-none pr-20" 
+              className="p-2 w-full md:w-auto rounded-md bg-white/10 text-gray-300 placeholder-gray-400 focus:outline-none pr-20 mb-2"
             />
-            <button type="submit" className="absolute right-0 top-0 h-full px-4 bg-transparent hover:text-gray-900 text-orange-500 font-semibold transition duration-300 ease-in-out ">
+            <button
+              type="submit"
+              className="h-full px-4 bg-transparent hover:bg-white/20 text-orange-500 font-semibold transition duration-300 ease-in-out rounded-md"
+            >
               Subscribe
             </button>
           </form>

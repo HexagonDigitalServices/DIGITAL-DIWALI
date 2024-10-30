@@ -7,26 +7,31 @@ import { Link } from 'react-scroll';
 
 const SecondSection = () => {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col lg:flex-row items-center justify-between gap-12">
+    <section className="max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center justify-between gap-12">
       {/* Text Content */}
-      <div className="flex flex-col items-start max-w-lg space-y-6 text-center lg:text-left">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 leading-snug">
-          This Diwali, Light Up Your Celebration With Hexagon
+      <div className="flex flex-col items-start max-w-lg space-y-4 text-center lg:text-left">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 leading-snug">
+          This Diwali Light Up Your Celebration With Hexagon
         </h1>
-        <p className="text-base md:text-lg text-gray-600">
+        <p className="text-base sm:text-lg text-gray-600">
           Enhance your beauty effortlessly with clean, nourishing products
           that let your natural radiance shine through.
         </p>
-        <Link to="websites" smooth={true} duration={500}>
-          <button className="gradient-button text-black px-6 py-3 rounded-lg transition-transform hover:scale-105">
-            Shop Now
-          </button>
-        </Link>
 
+        {/* Button for Small Screens */}
+     <div className="block sm:hidden mt-4 text-center">
+  <Link to="websites">
+    <button className="gradient-button text-black px-6 py-3">
+      Shop Now
+    </button>
+  </Link>
+</div>
+
+        {/* Hexagon Logo */}
         <img
           src={hlogo}
           alt="Hexagon Logo"
-          className="mt-4 mx-auto lg:mx-0 h-16 md:h-20 lg:h-24 transform hover:scale-105 transition"
+          className="transform hover:scale-105 transition mx-auto lg:mx-0 mt-4 h-20 sm:h-24"
         />
       </div>
 
@@ -36,25 +41,34 @@ const SecondSection = () => {
         <img
           src={s2b}
           alt="Diwali sweets 2"
-          className="h-48 w-32 sm:h-56 sm:w-40 md:h-64 md:w-44 lg:h-72 lg:w-48 object-cover rounded-lg shadow-lg transform hover:scale-105 transition"
+          className="h-72 w-48 transform hover:scale-105 transition"
         />
 
         {/* Smaller Images */}
-        <div className="absolute top-4 left-20 sm:top-6 sm:left-16 md:left-28 lg:top-8 lg:left-40 border-2 border-white rounded-lg">
-          <img
-            src={s2a}
-            alt="Diwali sweets 3"
-            className="h-20 w-16 sm:h-24 sm:w-20 md:h-28 md:w-24 lg:h-32 lg:w-28 object-cover transform hover:scale-105 transition"
-          />
-        </div>
+        <div className="absolute top-8 left-40 sm:left-10 md:left-20 lg:left-10 xl:left-5 border-2 border-white">
+  <img
+    src={s2a}
+    alt="Diwali sweets 3"
+    className="transform h-32 w-28 z-10 hover:scale-105 transition sm:h-24 sm:w-20"
+  />
+</div>
 
-        <div className="absolute bottom-[-20px] right-10 sm:bottom-[-24px] sm:right-12 md:right-14 lg:right-16 border-2 border-white rounded-lg">
+        <div className="absolute bottom-[-40px] right-14 border-2 border-white">
           <img
             src={s2c}
             alt="Diwali sweets 4"
-            className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 lg:h-28 lg:w-32 object-cover transform hover:scale-105 transition"
+            className="transform h-28 w-38 hover:scale-105 transition"
           />
         </div>
+      </div>
+
+      {/* Button for Medium & Large Screens */}
+      <div className="hidden sm:block absolute bottom-10 left-6 lg:left-16">
+        <Link to="websites">
+          <button className="gradient-button text-black px-6 py-3">
+            Shop Now
+          </button>
+        </Link>
       </div>
     </section>
   );
